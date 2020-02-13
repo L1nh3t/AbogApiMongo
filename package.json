@@ -1,0 +1,29 @@
+{
+  "name": "abogapimongo",
+  "version": "1.0.0",
+  "description": "Backend Abog API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/L1nh3t/AbogApiMongo.git"
+  },
+  "keywords": [
+    "Abog",
+    "APi"
+  ],
+  "author": "Linhet Jaen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/L1nh3t/AbogApiMongo/issues"
+  },
+  "homepage": "https://github.com/L1nh3t/AbogApiMongo#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.8.13",
+    "nodemon": "^2.0.2"
+  }
+}
