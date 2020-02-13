@@ -16,7 +16,9 @@ app.use('/clientes',clientes);
 //     console.log("its running");
 // })
 
-
+app.get('/', (req, res)=>{
+res.send("Hola Bienvenido a AbogAPI")
+});
 
 
 //Conexion Base de Datos
