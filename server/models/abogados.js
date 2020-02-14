@@ -1,15 +1,13 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
-const abogado = new Schema({
+const abogadoSquema = new Schema({
   nombre: String,
   casosExitosos : Number,
   areaLaboral : String,
-  img_url:{
-    type:String,
-    default:"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fplantillasdememes.com%2Fimg%2Fplantillas%2Fyo-habia-ponido-mis-cosas-aqui01561772600.jpg&f=1&nofb=1"
-  },
+  img_url: String
 })
-const Abogados = mongoose.model("Abogados",abogado);
+const Abogados = mongoose.model("Abogados",abogadoSquema)
 module.exports = {
     Abogados
 }
+

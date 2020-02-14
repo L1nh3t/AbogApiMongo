@@ -2,6 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cors= require('cors');
 const clientes = require("./controllers/clientes.js");
+const abogados = require("./controllers/abogados.js");
 const app = express();
 app.use(cors());
 //Puerto
@@ -10,6 +11,7 @@ const PORT = process.env.PORT || 5000;
 const URL_MONGO = 'mongodb+srv://linhetsa:l1nh3tj43n@clusterdevfroja-ugo6l.mongodb.net/test?retryWrites=true&w=majority';
 app.use(express.json())
 app.use('/clientes',clientes);
+app.use('/abogados', abogados);
 
 //Puerto
 // app.listen(PORT,()=>{
